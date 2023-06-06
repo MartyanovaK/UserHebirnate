@@ -61,6 +61,6 @@ public class User {
     }
 
     public String toString() {
-        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+        return String.format("User {id = '%s', name = '%s', lastName = '%s', age = '%d'}", getId(), getName(), getLastName(), getAge());
     }
 }

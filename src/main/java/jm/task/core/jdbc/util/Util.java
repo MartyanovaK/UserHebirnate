@@ -35,8 +35,8 @@ public class Util {
         Connection connection = null;
         try {
             Class.forName(DB_DRIVER).getDeclaredConstructor().newInstance();
-            connection = (Connection) DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
-            System.out.println("ok");
+            connection =  DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+
         } catch (ClassNotFoundException | SQLException | NoSuchMethodException | InstantiationException |
                  IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
