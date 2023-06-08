@@ -60,9 +60,9 @@ public class Util {
                 // Hibernate settings equivalent to hibernate.cfg.xml's properties
                 Properties settings = new Properties();
                 settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/hibernate_db?useSSL=false");
+                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/user");
                 settings.put(Environment.USER, "root");
-                settings.put(Environment.PASS, "root");
+                settings.put(Environment.PASS, "89118324695");
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
 
                 settings.put(Environment.SHOW_SQL, "true");
@@ -85,9 +85,7 @@ public class Util {
         }
         return sessionFactory;
     }
-    public static void closed() {
-        getSessionFactory().close();
-    }
+
 
 
 }
