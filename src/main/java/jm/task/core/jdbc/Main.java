@@ -23,7 +23,35 @@ public class Main {
         userDao.removeUserById(1);
         userDao.getAllUsers();
         userDao.cleanUsersTable();
-        userDao.dropUsersTable();
+////        userDao.dropUsersTable();
+//         String testName = "Ivan";
+//         String testLastName = "Ivanov";
+//         byte testAge = 5;
+//        try {
+//            userService.dropUsersTable();
+//            userService.createUsersTable();
+//            userService.saveUser(testName, testLastName, testAge);
+//            userService.removeUserById(1L);
+//        } catch (Exception e) {
+//            System.out.println("При тестировании удаления пользователя по id произошло исключение\n" + e);
+//        }
+//        try {
+//            userService.dropUsersTable();
+//            userService.createUsersTable();
+//            userService.saveUser(testName, testLastName, testAge);
+//
+//            User user = userService.getAllUsers().get(0);
+//
+//            if (!testName.equals(user.getName())
+//                    || !testLastName.equals(user.getLastName())
+//                    || testAge != user.getAge()
+//            ) {
+//                System.out.println("User был некорректно добавлен в базу данных");
+//            }
+//
+//        } catch (Exception e) {
+//            System.out.println("Во время тестирования сохранения пользователя произошло исключение\n" + e);
+//        }
 
 
     }
